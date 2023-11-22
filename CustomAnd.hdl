@@ -1,0 +1,8 @@
+CHIP CustomAnd {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    CustomNand(a=a, b=b, out=notab);
+    CustomNot(in=notab, out=out);
+}
