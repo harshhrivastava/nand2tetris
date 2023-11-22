@@ -1,0 +1,11 @@
+CHIP CustomXor {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    CustomNot(in=a, out=nota);
+    CustomNot(in=b, out=notb);
+    CustomAnd(a=a, b=notb, out=anotb);
+    CustomAnd(a=nota, b=b, out=bnota);
+    CustomOr(a=anotb, b=bnota, out=out);
+}
