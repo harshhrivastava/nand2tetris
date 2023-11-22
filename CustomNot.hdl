@@ -1,0 +1,7 @@
+CHIP CustomNot {
+    IN in;
+    OUT out;
+
+    PARTS:
+    CustomNand(a=in, b=in, out=out);
+}
