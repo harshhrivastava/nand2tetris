@@ -1,0 +1,22 @@
+CHIP CustomNot16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    CustomNot(in=in[0], out=out[0]);
+    CustomNot(in=in[1], out=out[1]);
+    CustomNot(in=in[2], out=out[2]);
+    CustomNot(in=in[3], out=out[3]);
+    CustomNot(in=in[4], out=out[4]);
+    CustomNot(in=in[5], out=out[5]);
+    CustomNot(in=in[6], out=out[6]);
+    CustomNot(in=in[7], out=out[7]);
+    CustomNot(in=in[8], out=out[8]);
+    CustomNot(in=in[9], out=out[9]);
+    CustomNot(in=in[10], out=out[10]);
+    CustomNot(in=in[11], out=out[11]);
+    CustomNot(in=in[12], out=out[12]);
+    CustomNot(in=in[13], out=out[13]);
+    CustomNot(in=in[14], out=out[14]);
+    CustomNot(in=in[15], out=out[15]);
+}
