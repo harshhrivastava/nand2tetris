@@ -1,0 +1,9 @@
+CHIP CustomDeMux {
+    IN in, sel;
+    OUT a, b;
+
+    PARTS:
+    CustomNot(in=sel, out=notsel);
+    CustomAnd(a=in, b=notsel, out=a);
+    CustomAnd(a=in, b=sel, out=b);
+}
