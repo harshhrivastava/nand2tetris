@@ -1,10 +1,10 @@
 CHIP CustomMux {
-    IN a, b, sel;
+    IN in1, in2, sel;
     OUT out;
 
     PARTS:
     CustomNot(in=sel, out=notsel);
-    CustomAnd(a=a, b=notsel, out=anotsel);
-    CustomAnd(a=b, b=sel, out=bsel);
-    CustomOr(a=anotsel, b=bsel, out=out);
+    CustomAnd(a=in1, b=notsel, out=in1notsel);
+    CustomAnd(a=in2, b=sel, out=in2sel);
+    CustomOr(a=in1notsel, b=in2sel, out=out);
 }
